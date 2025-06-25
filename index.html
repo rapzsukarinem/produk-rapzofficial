@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk RAPZ Official</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-light: #f9fafb;
+      --card-dark: #1e293b;
+      --card-light: #ffffff;
+      --text-dark: #ffffff;
+      --text-light: #1e293b;
+      --section-dark: #1f2937;
+      --section-light: #e5e7eb;
+    }
+
+    [data-theme="dark"] {
+      --bg: var(--bg-dark);
+      --card: var(--card-dark);
+      --text: var(--text-dark);
+      --section: var(--section-dark);
+    }
+
+    [data-theme="light"] {
+      --bg: var(--bg-light);
+      --card: var(--card-light);
+      --text: var(--text-light);
+      --section: var(--section-light);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #7c3aed, #4338ca);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    #toggle-theme {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #toggle-theme:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--card);
+      color: var(--text);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, background 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    section {
+      background-color: var(--section);
+      color: var(--text);
+      padding: 2rem;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .wa-button,
+    .ig-button {
+      display: inline-block;
+      margin: 10px 8px 0 8px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .wa-button {
+      background-color: #25D366;
+      color: white;
+    }
+    .wa-button:hover {
+      background-color: #128C7E;
+    }
+
+    .ig-button {
+      background-color: #8b5cf6;
+      color: white;
+    }
+    .ig-button:hover {
+      background-color: #7c3aed;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--bg);
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="text-4xl font-bold">PRODUK RAPZ OFFICIAL</h1>
+    <p class="text-lg mt-2">Solusi digital dari RAPZ untuk kamu</p>
+    <button id="toggle-theme" title="Ubah Mode">🌙</button>
+  </header>
+
+  <main>
+    <div class="product-card" data-aos="fade-up">
+      <h2>Script Koteix Emperor</h2>
+      <p>Script eksklusif dengan fitur lengkap untuk bot WhatsApp.</p>
+    </div>
+
+    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+      <h2>Script RAPZShopBot</h2>
+      <p>Bot toko otomatis untuk transaksi instan dan aman.</p>
+    </div>
+
+    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+      <h2>Panel Pterodactyl</h2>
+      <p>RAM 1GB Unlimited + Admin & Reseller Panel lengkap.</p>
+    </div>
+
+    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+      <h2>Jasa Fix Error Script</h2>
+      <p>Kami bantu perbaiki bug atau error pada script kamu.</p>
+    </div>
+
+    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+      <h2>Base Kosongan</h2>
+      <p>Base bot kosong siap custom sesuai kebutuhan kamu.</p>
+    </div>
+
+    <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+      <h2>Script Obfuscator</h2>
+      <p>Script sudah di-OBF untuk keamanan maksimal.</p>
+    </div>
+  </main>
+
+  <section>
+    <h3 class="text-xl font-semibold">Untuk Harga</h3>
+    <p class="mt-2">Silakan langsung hubungi admin melalui tombol di bawah ini:</p>
+    
+    <a href="https://wa.me/6281318789177" target="_blank" class="wa-button">
+      Hubungi via WhatsApp
+    </a>
+
+    <a href="https://t.me/rapzje" target="_blank" class="ig-button">
+      Instagram @rapzje
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 RAPZ Official. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    // Theme Toggle Logic
+    const toggleBtn = document.getElementById('toggle-theme');
+    const html = document.documentElement;
+
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      toggleBtn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+    });
+  </script>
+</body>
+</html>
